@@ -313,17 +313,66 @@ a {
     text-decoration: none;
 }
 
-.contact-form .btn {
-    display: inline-block;
-    background:black ; /* verde claro */
-    color: #fff;
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 150px;
+/* ================= CONTACT – melhorias responsivas ================= */
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 500px; /* limite legal pra telas grandes */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
     font-size: 1rem;
+    border: 2px solid #000;
+    border-radius: 0.75rem;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.75rem;
     cursor: pointer;
-    transition: 0.3s;
-    margin-top: 1rem; /* <--- Aqui é o espaço entre input e botão */
+    background: #000;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.contact-form button:hover {
+    background: #222;
+}
+
+/* Responsividade extra */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 1rem 0.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 0.95rem;
+        padding: 0.9rem;
+    }
 }
 
 

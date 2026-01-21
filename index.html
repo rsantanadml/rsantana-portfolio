@@ -180,19 +180,28 @@
 
 
 
-<section class="contact" id="contact">
-    <div class="input-box">
-        <h2 class="section-title">Contact Me</h2>
+<section class="contact-section" id="contact">
+    <h2 class="section-title">Contact Me</h2>
 
-        <form action="mailto:seuemail@exemplo.com" method="get" enctype="text/plain" class="contact-form">
-            <div class="input">
-                <input type="email" name="email" placeholder="example@gmail.com" required>
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-            <button type="submit" class="btn">Submit</button>
-        </form>
-    </div>
+<form 
+  action="https://formsubmit.co/rafaelsantana0840@gmail.com"
+  method="POST"
+  class="contact-form"
+>
+
+<input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="Novo contato do portfólio">
+  <input type="hidden" name="_template" value="table">
+
+  <input type="text" name="name" placeholder="Your name" required>
+  <input type="email" name="email" placeholder="Your email" required>
+  <textarea name="message" placeholder="Your message" required></textarea>
+  
+  <button type="submit">Send</button>
+  </form>
+
 </section>
+
 
     <footer>
 

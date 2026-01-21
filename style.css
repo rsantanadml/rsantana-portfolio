@@ -313,68 +313,68 @@ a {
     text-decoration: none;
 }
 
-/* ================= CONTACT – melhorias responsivas ================= */
-
 .contact-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
 }
 
-.contact-form {
+.section-title {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#contact-form {
     width: 100%;
-    max-width: 500px; /* limite legal pra telas grandes */
-    margin: 0 auto;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.contact-form input,
-.contact-form textarea {
+#contact-form input,
+#contact-form textarea {
     width: 100%;
     padding: 1rem;
     font-size: 1rem;
-    border: 2px solid #000;
+    border: 2px solid black;
     border-radius: 0.75rem;
 }
 
-.contact-form textarea {
+#contact-form textarea {
     min-height: 120px;
     resize: vertical;
 }
 
-.contact-form button {
+#contact-form button {
     width: 100%;
     padding: 1rem;
     font-size: 1.1rem;
     border: none;
     border-radius: 0.75rem;
     cursor: pointer;
-    background: #000;
-    color: #fff;
+    background: linear-gradient(to right, #009dff, #ff00ff);
+    color: white;
     transition: 0.2s ease-in-out;
 }
 
-.contact-form button:hover {
-    background: #222;
+#contact-form button:hover {
+    background: linear-gradient(to right, #ff00ff, #009dff);
 }
 
-/* Responsividade extra */
+/* Responsividade */
 @media (max-width: 768px) {
-    .contact-section {
-        padding: 1rem 0.5rem;
-    }
-
-    .contact-form input,
-    .contact-form textarea,
-    .contact-form button {
-        font-size: 0.95rem;
-        padding: 0.9rem;
-    }
+    .section-title { font-size: 2.5rem; }
+    #contact-form input,
+    #contact-form textarea,
+    #contact-form button { font-size: 0.95rem; padding: 0.9rem; }
 }
 
+@media (max-width: 480px) {
+    .section-title { font-size: 2rem; }
+}
 
 
 footer{

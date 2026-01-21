@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"><span>Rafael Santana</span></a>
+
+        <ul class="nav-links">
+            <li>
+                <a href="#intro">Intro</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <button class="visit-btn" onclick="window.open('https://github.com/rsantanadml', '_blank')">
+            Visit Github
+        </button>
+    </header>
+
+    <section id="intro" class="intro">
+        <div class="intro-container">
+            <img src="imagem 2.jpg" alt="">
+
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Rafael Santana</h1>
+                    <span>Frontend developer</span>
+                </div>
+                <div class="btn-group">
+                    <a href="Rafael Santana CV - Junior Front end developer.pdf" class="btn" download>
+                        Download CV
+                    </a>
+
+                    <a href="#contact" class="btn">
+                        Contact
+                    </a>
+                </div>
+
+
+
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/rafaelsantanadml/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/rsantanadml" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/rsantanadev/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+
+        <h2 class="section-title">About</h2>
+
+        <div class="about-info">
+
+            <div class="grid">
+                <div class="grid-card">
+
+                    <i class="fa-solid fa-code"></i>
+                    <span> Who I am</span>
+                    <h3> Frontend Developer in training</h3>
+                    <p>I'm a frontend developer focused on building clean, responsive and user-friendly interfaces.
+                        I'm currently improving my skills through personal projects and continuous learning.</p>
+
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-book"></i>
+                    <span>What I work with</span>
+                    <h3> Core Skill</h3>
+                    <p>HTML, CSS, JavaScript, React, responsive layouts, Git/GitHub and modern UI practices.
+                        I enjoy transforming ideas into simple and functional web experiences.</p>
+
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-arrow-pointer"></i>
+                    <span>My goal</span>
+                    <h3>First Opportunity</h3>
+                    <p>I'm looking for my first opportunity as a developer where I can grow, learn from real projects
+                        and contribute with dedication and creativity.</p>
+
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span>How I learn</span>
+                    <h3>Consistent Learning</h3>
+                    <p> I learn by building real projects, breaking problems into small parts
+                        and constantly reviewing best practices. I believe consistency beats speed.</p>
+
+                </div>
+            </div>
+
+            <img src="./imagem 2.jpg" alt="">
+        </div>
+    </section>
+
+   <section id="projects" class="projects">
+    <h2 class="section-title">Recent Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <img src="travelgram.png" alt="Project Travelgram">
+            <h3>Project Travelgram</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <div class="btn-group">
+                <a href="https://rsantanadml.github.io/travelgram-project/" target="_blank" class="btn">
+                    Live Demo
+                </a>
+                <a href="https://github.com/rsantanadml/travelgram-project" target="_blank" class="btn">
+                    Github Repo
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="technews.png" alt="Project TechNews">
+            <h3>Project TechNews</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <div class="btn-group">
+                <a href="https://rsantanadml.github.io/tech_news-portal/" target="_blank" class="btn">
+                    Live Demo
+                </a>
+                <a href="https://github.com/rsantanadml/tech_news-portal" target="_blank" class="btn">
+                    Github Repo
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="rosie-image.png" alt="Project Rosie">
+            <h3>Project Rosie</h3>
+            <p>Rosie Portfolio: A clean and responsive personal portfolio website showcasing projects, skills, and
+                contact information.</p>
+            <div class="btn-group">
+                <a href="https://rsantanadml.github.io/rosie_wilcox_portfolio/" target="_blank" class="btn">
+                    Live Demo
+                </a>
+                <a href="https://github.com/rsantanadml/rosie_wilcox_portfolio" target="_blank" class="btn">
+                    Github Repo
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="contact" id="contact">
+    <div class="input-box">
+        <h2 class="section-title">Contact Me</h2>
+
+        <form action="mailto:seuemail@exemplo.com" method="get" enctype="text/plain" class="contact-form">
+            <div class="input">
+                <input type="email" name="email" placeholder="example@gmail.com" required>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</section>
+
+    <footer>
+
+        <ul>
+            <li>
+                <a href="#intro">Intro</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        <p class="copyright"> © All Rights Reserved | Rafael Santana </p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
